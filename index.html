@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Cyberbix Technologies | Innovation-First Digital & AI Agency</title>
+    <meta name="description" content="Cyberbix Technologies Private Limited is an innovation-first digital agency based in Technopark, Trivandrum, Kerala. Specializing in Web & App Development, E-commerce (Shopify, WooCommerce), Digital Marketing, and Custom AI Solutions.">
+    <meta name="keywords" content="Cyberbix, Cyberbix Technologies, Web Development, Ecommerce Agency, AI Solutions India, Digital Marketing, Shopify Developer Kerala, Technopark Trivandrum">
+    <meta name="author" content="Cyberbix Technologies">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.cyberbix.in/">
+    <meta property="og:title" content="Cyberbix Technologies | Digital Agency & AI Solutions">
+    <meta property="og:description" content="Empowering modern businesses with enterprise-grade web development, Shopify e-commerce setups, growth marketing campaigns, and AI integrations. Based at Technopark, Kerala.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.cyberbix.in/">
+    <meta property="twitter:title" content="Cyberbix Technologies | Digital Agency & AI Solutions">
+    <meta property="twitter:description" content="Empowering modern businesses with enterprise-grade web development, Shopify e-commerce setups, growth marketing campaigns, and AI integrations.">
+
+    <!-- Preloads & Favicons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ==========================================================================
+       NAVIGATION HEADER
+       ========================================================================== -->
+    <header class="header" id="main-header">
+        <div class="header-container">
+            <!-- Brand SVG Logo & Wordmark -->
+            <a href="#home" class="logo" id="header-logo">
+                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#00f2fe" />
+                            <stop offset="100%" stop-color="#7f00ff" />
+                        </linearGradient>
+                        <filter id="glow">
+                            <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                            <feMerge>
+                                <feMergeNode in="coloredBlur"/>
+                                <feMergeNode in="SourceGraphic"/>
+                            </feMerge>
+                        </filter>
+                    </defs>
+                    <!-- Outer Hexagon Matrix -->
+                    <polygon points="50,12 85,32 85,72 50,92 15,72 15,32" stroke="url(#logoGrad)" stroke-width="4" fill="rgba(0, 242, 254, 0.05)" />
+                    <!-- Neural core interlocking links -->
+                    <circle cx="50" cy="52" r="14" stroke="url(#logoGrad)" stroke-width="3" fill="none" />
+                    <line x1="50" y1="12" x2="50" y2="38" stroke="url(#logoGrad)" stroke-width="2.5" stroke-dasharray="3,3" />
+                    <line x1="15" y1="72" x2="38" y2="59" stroke="url(#logoGrad)" stroke-width="2.5" />
+                    <line x1="85" y1="72" x2="62" y2="59" stroke="url(#logoGrad)" stroke-width="2.5" />
+                    <!-- Glowing nodes -->
+                    <circle cx="50" cy="38" r="4.5" fill="#00f2fe" filter="url(#glow)" />
+                    <circle cx="38" cy="59" r="4.5" fill="#7f00ff" filter="url(#glow)" />
+                    <circle cx="62" cy="59" r="4.5" fill="#e100ff" filter="url(#glow)" />
+                </svg>
+                <span>CYBERBIX</span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#estimator" class="nav-link">Estimator</a></li>
+                <li><a href="#portfolio" class="nav-link">Showcase</a></li>
+                <li><a href="#contact" class="nav-link">Contact Us</a></li>
+            </ul>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- ==========================================================================
+       HERO SECTION (Neural Particle canvas backdrop)
+       ========================================================================== -->
+    <section class="hero" id="home">
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-bg-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-content reveal">
+                <div class="hero-badge">
+                    <i class="fa-solid fa-circle-nodes"></i> Innovation-First Digital & AI Agency
+                </div>
+                <h1 class="hero-title">
+                    Empowering Scale <br>
+                    <span class="gradient-text">Through Advanced Technology</span>
+                </h1>
+                <p class="hero-description">
+                    Based in Technopark, Trivandrum, Cyberbix Technologies constructs premium, enterprise-ready web applications, scalable e-commerce infrastructures, AI-driven automation systems, and growth-focused digital marketing platforms.
+                </p>
+                <div class="hero-actions">
+                    <a href="#estimator" class="glow-btn primary" id="hero-cta-estimate">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i> Estimate Project
+                    </a>
+                    <a href="#services" class="glow-btn secondary" id="hero-cta-services">Explore Services</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat-item">
+                        <div class="stat-num" data-val="100">0</div>
+                        <div class="stat-lbl">Projects Handled</div>
+                    </div>
+                    <div class="hero-stat-item">
+                        <div class="stat-num" data-val="99">0</div>
+                        <div class="stat-lbl">Success Rate</div>
+                    </div>
+                    <div class="hero-stat-item">
+                        <div class="stat-num" data-val="24">0</div>
+                        <div class="stat-lbl">AI Agents Active</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Glowing Cyber Matrix Visualization -->
+            <div class="hero-visual reveal reveal-delay-2">
+                <div class="visual-sphere">
+                    <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Tech HUD circles -->
+                        <circle cx="100" cy="100" r="85" stroke="#00f2fe" stroke-width="1.5" stroke-dasharray="10,15" opacity="0.4" />
+                        <circle cx="100" cy="100" r="70" stroke="#7f00ff" stroke-width="1" stroke-dasharray="4,8" opacity="0.6" />
+                        <circle cx="100" cy="100" r="55" stroke="#e100ff" stroke-width="2" stroke-dasharray="40,10,20,5" opacity="0.8" />
+                        
+                        <!-- Internal circuit tracks -->
+                        <path d="M100 15 V 45 L 85 60 H 50" stroke="#00f2fe" stroke-width="2" stroke-linecap="round" />
+                        <path d="M100 185 V 155 L 115 140 H 150" stroke="#7f00ff" stroke-width="2" stroke-linecap="round" />
+                        <path d="M15 100 H 45 L 60 115 V 135" stroke="#e100ff" stroke-width="2" stroke-linecap="round" />
+                        <path d="M185 100 H 155 L 140 85 V 65" stroke="#00f2fe" stroke-width="2" stroke-linecap="round" />
+                        
+                        <!-- Dynamic node nodes -->
+                        <circle cx="50" cy="60" r="4" fill="#00f2fe" />
+                        <circle cx="150" cy="140" r="4" fill="#7f00ff" />
+                        <circle cx="60" cy="135" r="4" fill="#e100ff" />
+                        <circle cx="140" cy="65" r="4" fill="#00f2fe" />
+                        <circle cx="100" cy="100" r="16" fill="rgba(0,242,254,0.15)" stroke="#00f2fe" stroke-width="2" />
+                        <polygon points="100,92 108,105 92,105" fill="#00f2fe" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       ABOUT SECTION
+       ========================================================================== -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-title-wrap reveal">
+                <span class="subtitle">Who We Are</span>
+                <h2 class="title">Accelerating Core Engineering</h2>
+            </div>
+            
+            <div class="about-grid">
+                <!-- Visual highlight card -->
+                <div class="about-visual reveal">
+                    <div class="glass-panel about-card">
+                        <h3>Technopark Base</h3>
+                        <p>Based in the state-of-the-art IT park of Trivandrum, Cyberbix Technologies blends high-performance computational methodologies with robust market execution.</p>
+                        
+                        <div class="about-card-stat">
+                            <div class="about-mini-stat">
+                                <div class="num">2025</div>
+                                <div class="lbl">Incorporated</div>
+                            </div>
+                            <div class="about-mini-stat">
+                                <div class="num">30+</div>
+                                <div class="lbl">Tech Engineers</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text presentation -->
+                <div class="about-content reveal reveal-delay-2">
+                    <h3>Enterprise-Grade Strategy</h3>
+                    <p class="main-p">We construct software systems built to withstand scale, secure assets, and trigger consistent corporate expansion.</p>
+                    <p class="sub-p">Our board of directors brings expert guidance in distributed networks, AI modeling, and system architectures, allowing us to implement software solutions that outperform generic setups.</p>
+                    
+                    <div class="about-features">
+                        <div class="about-feat-item">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <span>Secure & Scalable</span>
+                        </div>
+                        <div class="about-feat-item">
+                            <i class="fa-solid fa-bolt"></i>
+                            <span>Ultra-High Velocity</span>
+                        </div>
+                        <div class="about-feat-item">
+                            <i class="fa-solid fa-brain"></i>
+                            <span>AI Integrated Core</span>
+                        </div>
+                        <div class="about-feat-item">
+                            <i class="fa-solid fa-chart-line"></i>
+                            <span>Data-Driven ROI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       SERVICES SECTION (Micro-animated hover grids)
+       ========================================================================== -->
+    <section class="section" id="services">
+        <div class="container">
+            <div class="section-title-wrap reveal">
+                <span class="subtitle">Core Pillars</span>
+                <h2 class="title">Our Specialized Ecosystem</h2>
+            </div>
+
+            <div class="services-grid">
+                <!-- Web & App Development -->
+                <div class="glass-panel service-card reveal" id="service-web">
+                    <div class="service-icon-box">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.53c-.26-.81-1-1.4-1.9-1.4h-1v-3c0-.55-.45-1-1-1h-6v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.4z"/></svg>
+                    </div>
+                    <h3>Web & Apps</h3>
+                    <p>Building high-fidelity custom platforms, robust backend APIs, and enterprise cloud networks structured around client scale.</p>
+                    <ul class="service-bullet-list">
+                        <li><i class="fa-solid fa-circle-check"></i> Custom Web Apps</li>
+                        <li><i class="fa-solid fa-circle-check"></i> REST/GraphQL APIs</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Cloud Integrations</li>
+                    </ul>
+                </div>
+
+                <!-- E-commerce Solutions -->
+                <div class="glass-panel service-card creative reveal reveal-delay-1" id="service-ecommerce">
+                    <div class="service-icon-box">
+                        <svg viewBox="0 0 24 24"><path d="M17.21 9l-4.38-6.56c-.18-.27-.51-.44-.83-.44s-.65.17-.83.44L6.79 9H2c-.55 0-1 .45-1 1 0 .09.01.18.04.27l2.54 9.27c.23.84 1 1.46 1.88 1.46h13.08c.88 0 1.65-.62 1.88-1.46l2.54-9.27.04-.27c0-.55-.45-1-1-1h-4.79zM9 9l3-4.5L15 9H9zm3 8c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/></svg>
+                    </div>
+                    <h3>E-commerce</h3>
+                    <p>Constructing high-converting Shopify, WooCommerce, and custom checkout experiences with synchronized stock systems.</p>
+                    <ul class="service-bullet-list">
+                        <li><i class="fa-solid fa-circle-check"></i> Shopify & WooCommerce</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Custom Gateways</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Inventory Sync</li>
+                    </ul>
+                </div>
+
+                <!-- Digital Marketing -->
+                <div class="glass-panel service-card reveal reveal-delay-2" id="service-marketing">
+                    <div class="service-icon-box">
+                        <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"/></svg>
+                    </div>
+                    <h3>Digital Marketing</h3>
+                    <p>Structuring hyper-targeted ad strategies, data analytics, and search optimizations to capture highly profitable business leads.</p>
+                    <ul class="service-bullet-list">
+                        <li><i class="fa-solid fa-circle-check"></i> Google & Meta Ads</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Advanced SEO Audits</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Funnel Optimizations</li>
+                    </ul>
+                </div>
+
+                <!-- AI Integrations -->
+                <div class="glass-panel service-card creative reveal reveal-delay-3" id="service-ai">
+                    <div class="service-icon-box">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                    </div>
+                    <h3>AI Solutions</h3>
+                    <p>Deploying tailored natural language automation pipelines, smart chatbots, and forecasting architectures that cut human overhead.</p>
+                    <ul class="service-bullet-list">
+                        <li><i class="fa-solid fa-circle-check"></i> LLM Deployments</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Conversational Bots</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Workflow Automation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       INTERACTIVE DYNAMIC ESTIMATOR (Calculates budget/timeline dynamically)
+       ========================================================================== -->
+    <section class="section" id="estimator">
+        <div class="container">
+            <div class="section-title-wrap reveal">
+                <span class="subtitle">Transparent Sizing</span>
+                <h2 class="title">Interactive Project Estimator</h2>
+            </div>
+
+            <div class="estimator-layout reveal">
+                <!-- User input options panels -->
+                <div class="glass-panel estimator-config" id="estimator-inputs">
+                    
+                    <!-- Step 1: Category Selection -->
+                    <div class="estimator-step">
+                        <h4 class="estimator-step-title">
+                            <span class="num">1</span> Select Project Type
+                        </h4>
+                        <div class="estimator-grid-selector" id="estimator-types">
+                            <div class="estimator-card-option active" data-type="web" data-multiplier="1.0" data-base-days="20" data-base-cost="1200">
+                                <i class="fa-solid fa-laptop-code"></i>
+                                <span>Web App</span>
+                            </div>
+                            <div class="estimator-card-option" data-type="ecommerce" data-multiplier="1.25" data-base-days="25" data-base-cost="1500">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span>E-commerce</span>
+                            </div>
+                            <div class="estimator-card-option" data-type="marketing" data-multiplier="0.8" data-base-days="15" data-base-cost="800">
+                                <i class="fa-solid fa-bullhorn"></i>
+                                <span>Marketing</span>
+                            </div>
+                            <div class="estimator-card-option" data-type="ai" data-multiplier="1.5" data-base-days="30" data-base-cost="2200">
+                                <i class="fa-solid fa-brain"></i>
+                                <span>AI Agent</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Custom features addition -->
+                    <div class="estimator-step">
+                        <h4 class="estimator-step-title">
+                            <span class="num">2</span> Configure Features
+                        </h4>
+                        <div class="estimator-checkbox-grid" id="estimator-features">
+                            <!-- Populated dynamically based on type selection -->
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Speed/Urgency Matrix -->
+                    <div class="estimator-step">
+                        <h4 class="estimator-step-title">
+                            <span class="num">3</span> Target Delivery Speed
+                        </h4>
+                        <div class="slider-container">
+                            <input type="range" min="1" max="3" value="2" class="estimator-slider" id="speed-slider" aria-label="Project Delivery Speed">
+                            <div class="slider-labels">
+                                <span data-speed="1" data-mult="0.8" data-timemult="1.5">Standard</span>
+                                <span data-speed="2" data-mult="1.0" data-timemult="1.0" class="active">Accelerated</span>
+                                <span data-speed="3" data-mult="1.4" data-timemult="0.6">Hyper-Fast</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Live Results Panel -->
+                <div class="glass-panel estimator-results" id="estimator-outputs">
+                    <div class="results-header">
+                        <h4>Estimation Matrix</h4>
+                        <p>Computed matching Cyberbix development formulas.</p>
+                    </div>
+
+                    <div class="results-metrics">
+                        <div class="metric-block budget">
+                            <div class="metric-lbl">Estimated Budget Index</div>
+                            <div class="metric-val" id="val-cost">$0</div>
+                        </div>
+                        <div class="metric-block timeline">
+                            <div class="metric-lbl">Estimated Delivery</div>
+                            <div class="metric-val" id="val-time">0 Days</div>
+                        </div>
+                    </div>
+
+                    <div class="results-actions">
+                        <a href="#contact" class="glow-btn primary" id="btn-lock-estimator">
+                            <i class="fa-solid fa-paper-plane"></i> Apply This Setup
+                        </a>
+                        <p class="action-desc">Estimates are conceptual. Let's arrange a consultation to lock precise pricing and scopes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       SHOWCASE PORTFOLIO (Filterable Projects Grid)
+       ========================================================================== -->
+    <section class="section" id="portfolio">
+        <div class="container">
+            <div class="section-title-wrap reveal">
+                <span class="subtitle">Our Deliveries</span>
+                <h2 class="title">Engineered Case Studies</h2>
+            </div>
+
+            <!-- Filter Controls -->
+            <div class="portfolio-filters reveal">
+                <button class="filter-btn active" data-filter="all">All Ecosystems</button>
+                <button class="filter-btn" data-filter="web">Web Architectures</button>
+                <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+                <button class="filter-btn" data-filter="marketing">Growth Marketing</button>
+                <button class="filter-btn" data-filter="ai">AI Deployments</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="portfolio-grid">
+                <!-- Project 1 (Mohyq) -->
+                <div class="portfolio-item reveal" data-category="ecommerce">
+                    <div class="portfolio-item-bg"></div>
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-item-category">E-commerce • Boutique Store</span>
+                        <h3 class="portfolio-item-title">Mohyq By Binny</h3>
+                        <p class="portfolio-item-desc">A premium designer boutique offering Kanchipuram silks, organic cottons, and elegant wedding sarees.</p>
+                        <a href="https://mohyq.com/" target="_blank" class="portfolio-item-link">Visit Website <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 2 (Bharath Classic) -->
+                <div class="portfolio-item reveal reveal-delay-1" data-category="web">
+                    <div class="portfolio-item-bg"></div>
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-item-category">Web Development • Corporate Portal</span>
+                        <h3 class="portfolio-item-title">Bharath Classic</h3>
+                        <p class="portfolio-item-desc">A high-performance corporate platform and showcase engineered for sleek product inventory presentation.</p>
+                        <a href="https://bharathclassic.com/" target="_blank" class="portfolio-item-link">Visit Website <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 3 (Wagmi Vastra) -->
+                <div class="portfolio-item reveal reveal-delay-2" data-category="ecommerce">
+                    <div class="portfolio-item-bg"></div>
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-item-category">E-commerce • Fashion Boutique</span>
+                        <h3 class="portfolio-item-title">Wagmi Vastra</h3>
+                        <p class="portfolio-item-desc">Modern ethnic and contemporary apparel brand selling handpicked designer wear, kurtas, and women's co-ords.</p>
+                        <a href="https://wagmivastra.com/" target="_blank" class="portfolio-item-link">Visit Website <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 4 (RReliance) -->
+                <div class="portfolio-item reveal" data-category="ecommerce">
+                    <div class="portfolio-item-bg"></div>
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-item-category">E-commerce • Traditional Wear</span>
+                        <h3 class="portfolio-item-title">RReliance</h3>
+                        <p class="portfolio-item-desc">A prominent retail store and e-commerce portal offering readymade churidars, bridal dress materials, and partywear.</p>
+                        <a href="https://rreliance.com/" target="_blank" class="portfolio-item-link">Visit Website <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 5 (Eurocake) -->
+                <div class="portfolio-item reveal reveal-delay-1" data-category="ecommerce">
+                    <div class="portfolio-item-bg"></div>
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-item-category">E-commerce • Bakery Brand</span>
+                        <h3 class="portfolio-item-title">Eurocake India</h3>
+                        <p class="portfolio-item-desc">E-commerce ordering portal for premium baked goods, cakes, croissants, and health-conscious snack selections.</p>
+                        <a href="https://eurocake.in/" target="_blank" class="portfolio-item-link">Visit Website <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 6 (Womens Daily Wear) -->
+                <div class="portfolio-item reveal reveal-delay-2" data-category="ecommerce marketing">
+                    <div class="portfolio-item-bg"></div>
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-item-category">E-commerce • Direct-To-Consumer</span>
+                        <h3 class="portfolio-item-title">Women's Daily Wear</h3>
+                        <p class="portfolio-item-desc">Sleek direct-to-consumer store optimized for comfortable everyday clothing and high-converting checkouts.</p>
+                        <a href="https://womensdailywear.com/" target="_blank" class="portfolio-item-link">Visit Website <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 7 (GL Fashion India) -->
+                <div class="portfolio-item reveal" data-category="ecommerce marketing">
+                    <div class="portfolio-item-bg"></div>
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-item-category">E-commerce • Ethnic Hub</span>
+                        <h3 class="portfolio-item-title">GL Fashion India</h3>
+                        <p class="portfolio-item-desc">Vibrant ethnic fashion retail hub backed by automated social media ads and integrated product analytics.</p>
+                        <a href="https://glfashionindia.com/" target="_blank" class="portfolio-item-link">Visit Website <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 8 (Extrapack) -->
+                <div class="portfolio-item reveal reveal-delay-1" data-category="ecommerce web">
+                    <div class="portfolio-item-bg"></div>
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-item-category">E-commerce • B2B Supplies</span>
+                        <h3 class="portfolio-item-title">Extrapack</h3>
+                        <p class="portfolio-item-desc">Thiruvananthapuram-based packaging and shipping portal offering custom corrugated boxes and shipping supplies.</p>
+                        <a href="https://extrapackonline.com/" target="_blank" class="portfolio-item-link">Visit Website <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 9 (Mitha Elegance) -->
+                <div class="portfolio-item reveal reveal-delay-2" data-category="ecommerce">
+                    <div class="portfolio-item-bg"></div>
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-item-category">E-commerce • Premium Jewelry</span>
+                        <h3 class="portfolio-item-title">Mitha Elegance</h3>
+                        <p class="portfolio-item-desc">Bespoke online jewelry boutique specializing in necklaces, bangles, and designer gold covering accessories.</p>
+                        <a href="https://mithaelegance.com/" target="_blank" class="portfolio-item-link">Visit Website <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 10 (Label Anuradha Nair) -->
+                <div class="portfolio-item reveal" data-category="ecommerce">
+                    <div class="portfolio-item-bg"></div>
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-item-category">E-commerce • Designer Boutique</span>
+                        <h3 class="portfolio-item-title">Label Anuradha Nair</h3>
+                        <p class="portfolio-item-desc">Curated designer e-commerce boutique specializing in premium Jaipuri prints, salwar sets, co-ords, and ethnic kurtis.</p>
+                        <a href="https://labelanuradhanair.com/" target="_blank" class="portfolio-item-link">Visit Website <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       TECH STACK MATRIX
+       ========================================================================== -->
+    <section class="section" id="tech">
+        <div class="container">
+            <div class="section-title-wrap reveal">
+                <span class="subtitle">Stack Alignment</span>
+                <h2 class="title">Our Engineering Weapons</h2>
+            </div>
+
+            <div class="tech-board reveal">
+                <div class="tech-badge">
+                    <i class="fa-brands fa-react" style="color: #61dbfb;"></i>
+                    <span>React / Next.js</span>
+                </div>
+                <div class="tech-badge">
+                    <i class="fa-brands fa-node-js" style="color: #68a063;"></i>
+                    <span>Node.js / Express</span>
+                </div>
+                <div class="tech-badge">
+                    <i class="fa-brands fa-shopify" style="color: #96bf48;"></i>
+                    <span>Shopify Plus</span>
+                </div>
+                <div class="tech-badge">
+                    <i class="fa-brands fa-wordpress" style="color: #21759b;"></i>
+                    <span>WooCommerce</span>
+                </div>
+                <div class="tech-badge">
+                    <i class="fa-brands fa-python" style="color: #306998;"></i>
+                    <span>Python / FastAPI</span>
+                </div>
+                <div class="tech-badge">
+                    <i class="fa-brands fa-aws" style="color: #ff9900;"></i>
+                    <span>AWS Architectures</span>
+                </div>
+                <div class="tech-badge">
+                    <i class="fa-solid fa-cubes" style="color: #00f2fe;"></i>
+                    <span>GraphQL / REST APIs</span>
+                </div>
+                <div class="tech-badge">
+                    <i class="fa-solid fa-microchip" style="color: #7f00ff;"></i>
+                    <span>LLMs & PyTorch</span>
+                </div>
+                <div class="tech-badge">
+                    <i class="fa-solid fa-database" style="color: #336791;"></i>
+                    <span>PostgreSQL / Redis</span>
+                </div>
+                <div class="tech-badge">
+                    <i class="fa-brands fa-git-alt" style="color: #f1502f;"></i>
+                    <span>Git / CI-CD Pipelines</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       CONTACT SECTION
+       ========================================================================== -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-title-wrap reveal">
+                <span class="subtitle">Initialize Connection</span>
+                <h2 class="title">Secure A Free Consult</h2>
+            </div>
+
+            <div class="contact-layout">
+                <!-- Info Display & Custom Map -->
+                <div class="glass-panel contact-info-panel reveal">
+                    <div>
+                        <h3>Let's Construct</h3>
+                        <p class="intro-text">Our engineering team matches modern development processes to scale client brands directly.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div class="contact-item-content">
+                                    <div class="label">Secure Voice Lines</div>
+                                    <div class="val">+91 96050 39999</div>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="contact-item-content">
+                                    <div class="label">Encrypted Channels</div>
+                                    <div class="val">info@cyberbix.in</div>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="contact-item-content">
+                                    <div class="label">Headquarters</div>
+                                    <div class="val">Technopark, Trivandrum, Kerala, India</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Custom Futuristic Map locator mock -->
+                    <div class="map-mockup">
+                        <div class="map-bg"></div>
+                        <div class="map-lines"></div>
+                        <div class="map-pin">
+                            <div class="map-pin-pulse"></div>
+                            <i class="fa-solid fa-location-crosshairs"></i>
+                            <span>CYBERBIX HQ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Message Submission Box -->
+                <div class="glass-panel contact-form-panel reveal reveal-delay-1">
+                    <h3 class="form-title">Send Scope Request</h3>
+                    
+                    <form id="contact-form" novalidate>
+                        <div class="form-group-row">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="form-name" placeholder=" " required autocomplete="name">
+                                <label for="form-name" class="form-label">Complete Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="form-email" placeholder=" " required autocomplete="email">
+                                <label for="form-email" class="form-label">Email Address</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="form-subject" placeholder=" ">
+                            <label for="form-subject" class="form-label">Subject Theme</label>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea class="form-control" id="form-message" placeholder=" " required></textarea>
+                            <label for="form-message" class="form-label">Brief Project Parameters / Requirements...</label>
+                        </div>
+
+                        <button type="submit" class="glow-btn primary" id="btn-submit-form" style="width: 100%;">
+                            <i class="fa-solid fa-bolt"></i> Send Encrypted Request
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+    <footer class="footer">
+        <div class="footer-top">
+            <!-- Brand description -->
+            <div class="footer-brand">
+                <a href="#home" class="logo">
+                    <!-- SVG logo same as header -->
+                    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 32px; height: 32px;">
+                        <polygon points="50,12 85,32 85,72 50,92 15,72 15,32" stroke="url(#logoGrad)" stroke-width="4" fill="rgba(0, 242, 254, 0.05)" />
+                        <circle cx="50" cy="52" r="14" stroke="url(#logoGrad)" stroke-width="3" fill="none" />
+                        <circle cx="50" cy="38" r="4.5" fill="#00f2fe" />
+                        <circle cx="38" cy="59" r="4.5" fill="#7f00ff" />
+                        <circle cx="62" cy="59" r="4.5" fill="#e100ff" />
+                    </svg>
+                    <span>CYBERBIX</span>
+                </a>
+                <p>Private limited software consultancy deploying enterprise-grade digital systems and intelligent automation setups from Technopark, Trivandrum.</p>
+                <div class="footer-socials">
+                    <a href="https://linkedin.com" class="social-link" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://facebook.com" class="social-link" aria-label="Facebook Profile"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" class="social-link" aria-label="Instagram Profile"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com" class="social-link" aria-label="Twitter Profile"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Navigation Links -->
+            <div class="footer-links">
+                <h4>System Nodes</h4>
+                <ul class="footer-links-list">
+                    <li><a href="#home">Home Base</a></li>
+                    <li><a href="#about">Core Team</a></li>
+                    <li><a href="#services">Pillars</a></li>
+                    <li><a href="#estimator">Scope Estimator</a></li>
+                    <li><a href="#portfolio">Deliveries</a></li>
+                    <li><a href="#contact">Initialize Connect</a></li>
+                </ul>
+            </div>
+
+            <!-- Operation Hours -->
+            <div class="footer-hours">
+                <h4>Voice Channels Open</h4>
+                <p><span class="day">Mon – Fri:</span> <span>9:30 AM – 6:30 PM</span></p>
+                <p><span class="day">Saturday:</span> <span style="color: var(--color-text-dark);">Holiday</span></p>
+                <p><span class="day">Sunday:</span> <span style="color: var(--color-text-dark);">Holiday</span></p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Cyberbix Technologies Private Limited. All Rights Reserved.</p>
+            <div class="footer-legal">
+                <a href="#contact">Privacy Policy</a>
+                <a href="#contact">Terms of Scope</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==========================================================================
+       TOAST NOTIFICATION INJECTOR
+       ========================================================================== -->
+    <div class="toast-container">
+        <div class="toast" id="system-toast">
+            <i class="fa-solid fa-shield-halved" id="toast-icon"></i>
+            <div class="toast-content">
+                <div class="toast-title" id="toast-title">Secure Send Success</div>
+                <div class="toast-msg" id="toast-msg">Encrypted message received. Connecting soon.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Core Javascript Logic -->
+    <script src="app.js"></script>
+</body>
+</html>
