@@ -274,10 +274,15 @@ img, svg {
     cursor: pointer;
 }
 
-.logo svg {
-    width: 38px;
+.logo img {
     height: 38px;
+    width: auto;
     filter: drop-shadow(var(--glow-cyan));
+    transition: var(--transition-smooth);
+}
+
+.logo:hover img {
+    transform: scale(1.05);
 }
 
 .logo span {
